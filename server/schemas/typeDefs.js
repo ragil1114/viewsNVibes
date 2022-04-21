@@ -28,7 +28,7 @@ type Query {
 type Mutation {
     loginUser(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
-    saveTour(tourGuide: String, tourDestination: String!, description: String, title: String, tourId: String!, image: String): User
+    saveTour(tourId: String!, tourGuide: String!, tourDestination: String!, tourName: String!, image: String, description: String): User
     removeTour(tourId: String!): User
 }
 `;
