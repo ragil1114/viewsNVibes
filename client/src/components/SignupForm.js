@@ -13,3 +13,6 @@ const SignupForm = () => {
       email: "",
       password: "",
     });
+
+     // set state for form validation
+  const [validated] = useState(false);
