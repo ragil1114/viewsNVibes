@@ -4,7 +4,8 @@ const { Schema } = require('mongoose');
 const tourSchema = new Schema({
   tourGuide: 
     {
-      type: String,
+      type: String
+
     },
   description: {
     type: String,
@@ -21,6 +22,7 @@ const tourSchema = new Schema({
   },
   image: {
     type: String,
+    
   },
   tourName: {
     type: String,
