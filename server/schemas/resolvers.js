@@ -1,5 +1,6 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User } = require('../models'); // changed: REMOVED THOUGHT
+const { User } = require('../models');
+const { Tours } = require('../models');
 const { signToken } = require('../utils/auth');
 
 
@@ -15,12 +16,24 @@ const resolvers = {
 
             throw new AuthenticationError('Not logged in');
         },
+        // get all tours by destination
+        tours: async (parent, args, context) => {
+            if (context.tours) {
+                const toursData = await Tours.findAll({ tourDestination: context.tours.tourDestination })                
+                return [toursData];
+            }
+        },
     },
     Mutation: {
         addUser: async (parent, {username, email, password}) => {
             const user = await User.create({ username, email, password });
             const token = signToken(user);
             return { token, user };
+        },
+        addTour: async (parent, {tourId, tourGuide, tourDestination, tourName, image, description}) => {
+            const tour = await Tours.create({ tourId, tourGuide, tourDestination, tourName, image, description });
+            // const token = signToken(user);
+            return tour;
         },
         loginUser: async (parent, { email, password }) => {
             const user = await User.findOne({ email });

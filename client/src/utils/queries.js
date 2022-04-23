@@ -8,6 +8,7 @@ export const GET_ME = gql`
       email
       tourCount
       savedTours {
+            _id
             tourId
             tourGuide
             tourDestination
@@ -21,6 +22,7 @@ export const GET_ME = gql`
 export const GET_TOURS = gql` 
   {
     tours {
+        _id
         tourId
         tourGuide
         tourDestination
