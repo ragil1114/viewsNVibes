@@ -1,46 +1,75 @@
-import React from 'react'
-import { Navbar, Nav, Container, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+import React from "react";
+import {
+    AppBar,
+    Toolbar,
+    CssBaseline,
+    Typography,
+    makeStyles,
+    useTheme,
+    useMediaQuery,
+  } from "@material-ui/core";
 
+import { Link } from "react-router-dom";
+import DrawerComponent from "./Drawer";
+// import Login from "../pages/Login";
+// import SignUp from "../pages/Signup";
 
-const NavBar = () => {
+const useStyles = makeStyles((theme) => ({
+    navlinks: {
+      marginLeft: theme.spacing(10),
+      display: "flex",
+    },
+
+    logo: {
+        flexGrow: "1",
+        cursor: "pointer",
+      },
+      link: {
+        textDecoration: "none",
+        color: "white",
+        fontSize: "20px",
+        marginLeft: theme.spacing(20),
+        "&:hover": {
+          color: "yellow",
+          borderBottom: "1px solid white",
+        },
+      },
+    }));
+    
+
+function Header(){
+    const classes = useStyles();
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
     return (
-        <Navbar bg="light" expand="lg">
-  <Container fluid>
-    <Navbar.Brand href="#">viewNvibes</Navbar.Brand>
-    <Navbar.Toggle aria-controls="navbarScroll" />
-    <Navbar.Collapse id="navbarScroll">
-      <Nav
-        className="me-auto my-2 my-lg-0"
-        style={{ maxHeight: '100px' }}
-        navbarScroll
-      >
-        <Nav.Link href="#action1">Home</Nav.Link>
-        <Nav.Link href="#action2">About</Nav.Link>
-        <NavDropdown title="Link" id="navbarScrollingDropdown">
-          <NavDropdown.Item href="#action3">Login</NavDropdown.Item>
-          <NavDropdown.Item href="#action4">Sign Up</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="#action5">
-            Something else here
-          </NavDropdown.Item>
-        </NavDropdown>
-        <Nav.Link href="#" disabled>
-          Link
-        </Nav.Link>
-      </Nav>
-      <Form className="d-flex">
-        <FormControl
-          type="search"
-          placeholder="Search"
-          className="me-2"
-          aria-label="Search"
-        />
-        <Button variant="outline-success">Search</Button>
-      </Form>
-    </Navbar.Collapse>
-  </Container>
-</Navbar>
-    )
-};
-
-export default NavBar;
+        <AppBar position="static">
+      <CssBaseline />
+      <Toolbar>
+        <Typography variant="h4" className={classes.logo}>
+          ViewsN'Vibes
+        </Typography>
+            {isMobile ? (
+                <DrawerComponent />
+            ) : (
+          <div className={classes.navlinks}>
+            <Link to="/" className={classes.link}>
+              Home
+            </Link>
+            <Link to="/Login" className={classes.link}>
+              Sign In
+            </Link>
+            <Link to="/Signup" className={classes.link}>
+              Sign Up
+            </Link>
+            <Link to="/Contact" className={classes.link}>
+              Contact
+            </Link>
+          </div>
+           )}
+      </Toolbar>
+    </AppBar>
+   
+    );
+}
+export default Header
