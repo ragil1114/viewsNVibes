@@ -1,7 +1,7 @@
 {
   "name": "viewsnvibes",
   "version": "1.0.0",
-  "description": "MERN stack tour guide / tour searching and saving favorite books application",
+  "description": "MERN stack tour guide / tour searching application",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
@@ -233,6 +233,5 @@
   },
   "bugs": {
     "url": "https://github.com/ragil1114/viewsNVibes/issues"
-  },
-  "homepage": "https://github.com/ragil1114/viewsNVibes#readme"
+  }
 }
