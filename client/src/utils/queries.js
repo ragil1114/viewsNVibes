@@ -18,3 +18,15 @@ export const GET_ME = gql`
     }
   }
 `;
+export const GET_TOURS = gql` 
+  {
+    tours {
+        tourId
+        tourGuide
+        tourDestination
+        tourName
+        image
+        description
+    }
+  }
+`;
