@@ -10,7 +10,7 @@ import {
   } from "@material-ui/core";
 
 import { Link } from "react-router-dom";
-import DrawerComponent from "./Drawer";
+import DrawerComponent from "../components/Drawer";
 // import Login from "../pages/Login";
 // import SignUp from "../pages/Signup";
 
@@ -46,14 +46,14 @@ function Header(){
         <AppBar position="static">
       <CssBaseline />
       <Toolbar>
-        <Typography variant="h4" className={classes.logo}>
+        <Typography variant="h1" className={classes.logo}>
           ViewsN'Vibes
         </Typography>
             {isMobile ? (
                 <DrawerComponent />
             ) : (
           <div className={classes.navlinks}>
-            <Link to="/" className={classes.link}>
+            <Link to="/Home" className={classes.link}>
               Home
             </Link>
             <Link to="/Login" className={classes.link}>
