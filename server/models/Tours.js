@@ -23,6 +23,7 @@ const tourSchema = new Schema({
   image: {
     type: String,
     
+
   },
   tourName: {
     type: String,
