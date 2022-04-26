@@ -8,6 +8,7 @@ export const LOGIN_USER = gql`
         username
         email
         savedTours {
+            _id
             tourId
             tourDestination
             tourGuide
@@ -29,6 +30,7 @@ export const ADD_USER = gql`
         email
         tourCount
         savedTours {
+            _id
             tourId
             tourGuide
             tourDestination
@@ -74,6 +76,7 @@ export const REMOVE_TOUR = gql`
         tourCount
         savedTours
         {
+            _id
             tourId
             tourGuide
             tourDestination

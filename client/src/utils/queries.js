@@ -8,6 +8,7 @@ export const GET_ME = gql`
       email
       tourCount
       savedTours {
+            _id
             tourId
             tourGuide
             tourDestination
@@ -15,6 +16,19 @@ export const GET_ME = gql`
             image
             description
       }
+    }
+  }
+`;
+export const GET_TOURS = gql` 
+  {
+    tours {
+        _id
+        tourId
+        tourGuide
+        tourDestination
+        tourName
+        image
+        description
     }
   }
 `;
