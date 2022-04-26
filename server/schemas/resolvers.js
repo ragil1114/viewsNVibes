@@ -19,7 +19,7 @@ const resolvers = {
             // get all tours by destination
             tours: async (parent, args, context) => {
                 // if (context.tours) {
-                    const toursData = await Tours.findByFields({ tourDestination: "San Antonio" })                
+                    const toursData = await Tours.findByFields({ tourDestination: Tours.context.tourDestination })                
                     return [toursData];
                 //}
             }
