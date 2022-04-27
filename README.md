@@ -2,7 +2,7 @@
 
 Views N’ Vibes is a full-stack SPA built on MERN stack that allows users to book travel packages or a tour guide of choice in any city around the world. With a modern polished UI and a robust backend, Views N’ Vibes is the perfect app for planning your next trip.
 
-## License
+## Licenses
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
