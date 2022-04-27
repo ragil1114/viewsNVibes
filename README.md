@@ -5,17 +5,21 @@ Views N’ Vibes is a full-stack SPA built on MERN stack that allows users to bo
 
 ## Table of Contents
 
+- [License](#license)
+
 - [Installation](#installation)
 
 - [Usage](#usage)
-
-- [License](#license)
 
 - [Technology](#technology)
 
 - [Links](#Links)
 
 - [Images](#Images)
+
+## License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Installation
 
@@ -32,10 +36,6 @@ OR
 To launch the application, run the following command:
 
 ``` npm run develop ```
-
-## License
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Technology
 
