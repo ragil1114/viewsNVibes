@@ -67,4 +67,4 @@ https://viewsnvibes.herokuapp.com/
 
 ![demo](https://github.com/ragil1114/viewsNVibes/blob/main/client/public/demo.png)
 ![demo2](https://github.com/ragil1114/viewsNVibes/blob/main/client/public/demo2.png)
-![demo2](https://github.com/ragil1114/viewsNVibes/blob/main/client/public/demo2.png)
+![demo3](https://github.com/ragil1114/viewsNVibes/blob/main/client/public/demo3.png)
