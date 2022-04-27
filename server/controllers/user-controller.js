@@ -20,7 +20,7 @@ module.exports = {
 
     res.json(foundTours);
   },
-    
+
   // get a single user by either their id or their username
   async getSingleUser({ user = null, params }, res) {
     const foundUser = await User.findOne({
@@ -43,8 +43,8 @@ module.exports = {
     const token = signToken(user);
     res.json({ token, user });
   },
-   // create a user, sign a token, and send it back (to client/src/components/SignUpForm.js)
-   async createTour({ body }, res) {
+  // create a user, sign a token, and send it back (to client/src/components/SignUpForm.js)
+  async createTour({ body }, res) {
     const tour = await Tours.create(body);
 
     if (!tour) {
@@ -86,7 +86,7 @@ module.exports = {
     }
   },
   // remove a tour from `savedTours`
-  async removeTour ({ user, params }, res) {
+  async removeTour({ user, params }, res) {
     const updatedUser = await User.findOneAndUpdate(
       { _id: user._id },
       { $pull: { savedTours: { tourId: params.tourId } } },
