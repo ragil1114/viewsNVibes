@@ -26,7 +26,7 @@ class Contact extends Component {
                         </div>
                         <div className="col s12 m6">
                             <div className="card-panel grey lighten-3">
-                                <h5>Please fill out this form</h5>
+                                <h5>Contact Us!</h5>
                                 <form>
                                     <div className="input-field">
                                         <input type="text" id="name" className="validate" />
