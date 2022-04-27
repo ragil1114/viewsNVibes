@@ -1,7 +1,7 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 
-const tourSchema = require('./Tours');
+const Tours = require('./Tours');
 
 const userSchema = new Schema(
   {
@@ -21,7 +21,7 @@ const userSchema = new Schema(
       required: true,
     },
     // set savedTours to be an array of data that adheres to the tourSchema
-    savedTours: [tourSchema],
+    savedTours: [Tours.schema],
   },
   // set this to use virtual below
   {

@@ -1,9 +1,26 @@
 // import user model
 const { User } = require('../models');
+
+// import tour model
+const { Tours } = require('../models');
+
 // import sign token function from auth
 const { signToken } = require('../utils/auth');
 
 module.exports = {
+  // get all tours by a specific destination
+  async getTours({ tours = null, params }, res) {
+    const foundTours = await Tours.findAll({
+      $or: [{ _id: tours ? tours.tourDestination : params.id }, { tourName: params.tourname }],
+    });
+
+    if (!foundTours) {
+      return res.status(400).json({ message: 'Cannot find a tour with this destination!' });
+    }
+
+    res.json(foundTours);
+  },
+
   // get a single user by either their id or their username
   async getSingleUser({ user = null, params }, res) {
     const foundUser = await User.findOne({
@@ -25,6 +42,16 @@ module.exports = {
     }
     const token = signToken(user);
     res.json({ token, user });
+  },
+  // create a user, sign a token, and send it back (to client/src/components/SignUpForm.js)
+  async createTour({ body }, res) {
+    const tour = await Tours.create(body);
+
+    if (!tour) {
+      return res.status(400).json({ message: 'Something is wrong!' });
+    }
+    // const token = signToken(user);
+    res.json({ tour });
   },
   // login a user, sign a token, and send it back (to client/src/components/LoginForm.js)
   // {body} is destructured req.body
@@ -59,7 +86,7 @@ module.exports = {
     }
   },
   // remove a tour from `savedTours`
-  async removeTour ({ user, params }, res) {
+  async removeTour({ user, params }, res) {
     const updatedUser = await User.findOneAndUpdate(
       { _id: user._id },
       { $pull: { savedTours: { tourId: params.tourId } } },
