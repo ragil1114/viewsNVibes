@@ -28,7 +28,9 @@ To install necessary dependencies, run the following command:
 ``` npm i ```
 
 ``` npm run build ``` 
-OR 
+
+or 
+
 ``` cd server && npm i && cd ../client && npm i ```
 
 ## Usage
