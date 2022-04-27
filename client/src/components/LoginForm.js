@@ -7,21 +7,21 @@ import { useMutation } from "@apollo/client";
 import { LOGIN_USER } from "../utils/mutations";
 
 const LoginForm = () => {
-    const [userFormData, setUserFormData] = useState({ email: "", password: "" });
-    const [validated] = useState(false);
-    const [showAlert, setShowAlert] = useState(false);
-  
-    const [login, { error }] = useMutation(LOGIN_USER);
-  
-    const handleInputChange = (event) => {
-      const { name, value } = event.target;
-      setUserFormData({ ...userFormData, [name]: value });
-    };
-  
-    const handleFormSubmit = async (event) => {
-      event.preventDefault();
+  const [userFormData, setUserFormData] = useState({ email: "", password: "" });
+  const [validated] = useState(false);
+  const [showAlert, setShowAlert] = useState(false);
 
-      // check if form has everything
+  const [login, { error }] = useMutation(LOGIN_USER);
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setUserFormData({ ...userFormData, [name]: value });
+  };
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+
+    // check if form has everything
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
       event.preventDefault();

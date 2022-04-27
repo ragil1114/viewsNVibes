@@ -40,18 +40,18 @@ db.once('open', async () => {
     for (let i = 0; i < 16; i += 1) {
         // console.log (seedTourId[i], seedTourGuide[i], seedTourDestination[i], 
         // seedTourName[i], seedImage[i], seedDescription[i]);
-       const tourId = seedTourId[i];
-       const tourGuide = seedTourGuide[i];
-       const tourDestination = seedTourDestination[i];
-       const tourName = seedTourName[i];
-       const image = seedImage[i];
-       const description = seedDescription[i];
-       toursData.push({ tourId, tourGuide, tourDestination, tourName, image, description} );
+        const tourId = seedTourId[i];
+        const tourGuide = seedTourGuide[i];
+        const tourDestination = seedTourDestination[i];
+        const tourName = seedTourName[i];
+        const image = seedImage[i];
+        const description = seedDescription[i];
+        toursData.push({ tourId, tourGuide, tourDestination, tourName, image, description });
 
     };
     await Tours.collection.insertMany(toursData);
 
-    
+
 
     // console.log('all done! Here is what was created: ', createdTours);
     console.log('all done!');

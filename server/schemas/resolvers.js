@@ -15,15 +15,15 @@ const resolvers = {
             }
 
             throw new AuthenticationError('Not logged in');
-            },
-            // get all tours by destination
-            tours: async (parent, args, context) => {
-                // if (context.tours) {
-                    const toursData = await Tours.findByFields({ tourDestination: Tours.context.tourDestination })                
-                    return [toursData];
-                //}
-            }
         },
+        // get all tours by destination
+        tours: async (parent, args, context) => {
+            // if (context.tours) {
+            const toursData = await Tours.findByFields({ tourDestination: Tours.context.tourDestination })
+            return [toursData];
+            //}
+        }
+    },
     //     // get all tours by entered searchDestination
     //     tours: async (parent, { searchDestination }) => {
     //         const params = tourDestination ? { searchDestination } : {};
