@@ -9,7 +9,7 @@ class Explore extends Component {
         <div className="container">
           <div className="row">
           <h4 className="center">
-              <span className="purple-text darken-1">Explore</span>ViewsN'Vibes</h4>
+              <span className="purple-text darken-1">Explore</span> with ViewsN'Vibes</h4>
             <div className="col s6 m3">
               <div className="card-panel">
                 <i className="material-icons medium purple-text">hotel</i>
