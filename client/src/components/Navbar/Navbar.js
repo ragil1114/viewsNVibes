@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import '../../../../node_modules/materialize-css/dist/css/materialize.min.css';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
+
+
+
+
+
+
 const SmoothScroll = () => {
   return (
     <section>
@@ -66,15 +72,21 @@ const SmoothScroll = () => {
         <li>
           <AnchorLink href="#search">Search</AnchorLink>
         </li>
-        <li>
-          <AnchorLink href="#explore">Explore</AnchorLink>
-        </li>
+        // <li>
+        //   <AnchorLink href="#explore">Explore</AnchorLink>
+        // </li>
         <li>
           <AnchorLink href="#adventure">Adventures</AnchorLink>
         </li>
         <li>
           <AnchorLink href="#gallery">Gallery</AnchorLink>
         </li>
+        <li>
+        <AnchorLink href="#signin">Sign In</AnchorLink>
+      </li>
+      <li>
+        <AnchorLink href="#signup">Sign Up</AnchorLink>
+      </li>
         <li>
           <AnchorLink href="#contact">Contact</AnchorLink>
         </li>
