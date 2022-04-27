@@ -5,11 +5,11 @@ const typeDefs = gql`
 type Tours {
     _id: ID
     tourId: String
-    tourDestination: String
     tourGuide: String
-    description: String
+    tourDestination: String
     tourName: String
     image: String
+    description: String  
 }
 type User {
     _id: ID
@@ -25,7 +25,7 @@ type Auth {
 
 type Query {
     me: User
-    tours: Tours
+    tours: [Tours]
 }
 type Mutation {
     loginUser(email: String!, password: String!): Auth

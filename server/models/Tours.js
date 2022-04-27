@@ -8,24 +8,23 @@ const tourSchema = new Schema({
     },
   description: {
     type: String,
-    required: true,
+    // required: true,
   },
   // saved tour id from database
   tourId: {
     type: String,
-    required: true,
+    // required: true,
   },
   tourDestination: {
       type: String,
-      required: true,
+      // required: true,
   },
   image: {
     type: String,
-    
   },
   tourName: {
     type: String,
-    required: true,
+    // required: true,
   },
 });
 
