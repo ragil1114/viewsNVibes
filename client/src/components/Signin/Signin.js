@@ -6,7 +6,7 @@ import Auth from "../../utils/auth";
 import { useMutation } from "@apollo/client";
 import { LOGIN_USER } from "../../utils/mutations";
 
-const LoginForm = () => {
+const Signin = () => {
   const [userFormData, setUserFormData] = useState({ email: "", password: "" });
   const [validated] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
@@ -49,7 +49,8 @@ const LoginForm = () => {
   };
 
   return (
-    <>
+   
+    <section id="signin">
       <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
         <Alert
           dismissible
@@ -96,8 +97,8 @@ const LoginForm = () => {
           Submit
         </Button>
       </Form>
-    </>
+      </section>
   );
 };
 
-export default LoginForm;
+export default Signin;

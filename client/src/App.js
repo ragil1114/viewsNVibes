@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import './App.css';
 import {
   ApolloClient,
@@ -7,7 +7,7 @@ import {
   createHttpLink,
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
-import Navbar from './components/Navbar/Navbar';
+import AppNavbar from './components/Navbar/Navbar';
 import Banner from './components/Banner/Banner';
 import Footer from './components/Footer/Footer';
 import Search from './components/Search/Search';
@@ -18,7 +18,9 @@ import Gallery from './components/Gallery/Gallery';
 import Signin from './components/Signin/Signin';
 import Signup from './components/Signup/Signup'
 import Contact from './components/Contact/Contact';
-import {BrowserRouter as Router } from 'react-router-dom';
+// import SearchTours from './pages/SearchTours';
+// import SavedTours from './pages/SavedTours';
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 const httpLink = createHttpLink({
@@ -50,8 +52,10 @@ function App() {
   return (
     <ApolloProvider client={client}>  
     <Router>
-      <Fragment>
-      <Navbar />
+      {/* <Fragment> */}
+      <AppNavbar />
+      {/* <SearchTours />
+      <SavedTours /> */}
       <Banner />
       <Search />
       <Explore />
@@ -62,10 +66,42 @@ function App() {
       <Signup />
       <Contact />
       <Footer />
-      </Fragment>
+      {/* </Fragment> */}
     </Router>
     </ApolloProvider>
   );
 }
+ export default App;
 
-export default App;
+
+// function App() {
+//   return (
+//     <ApolloProvider client={client}>
+//       <Router>
+//         <>
+//           <Navbar />
+//           <Routes>
+//             <Route exact path="/" component={SearchTours} />
+//             <Route exact path="/saved" component={SavedTours} />
+//             <Route render={() => <h1 className="display-2">Wrong page!</h1>} />
+//             <Route exact path="/banner" component={Banner} />
+//             <Route exact path="/footer" component={Footer} />
+//             <Route exact path="/search" component={Search} />
+//             <Route exact path="explore" component={Explore} />
+//             <Route exact path="/adventure" component={Adventure} />
+//             <Route exact path="/booking" component={Booking} />
+//             <Route exact path="/gallery" component={Gallery} />
+//             <Route exact path="/contact" component={Contact} />
+//             <Route exact path="/signin" component={Signin} />
+//             <Route exact path="/signup" component={Signup} />
+
+
+        
+//         </Routes>
+//         <>
+//       </Router>
+//     </ApolloProvider>
+//   );
+// }
+
+// export default App;
