@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Resort1 from '../../images/banner4.jpg';
 import Resort2 from '../../images/banner5.jpg';
 import Resort3 from '../../images/banner8.jpg';
-import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 class Popular extends Component {
     render() {

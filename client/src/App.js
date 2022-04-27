@@ -11,10 +11,11 @@ import Gallery from './components/Gallery/Gallery';
 // import Signin from './components/Signin/Signin';
 // import Signup from './components/Signup/Signup'
 import Contact from './components/Contact/Contact';
-import { BrowserRouter as Router } from 'react-router-dom';
+import {BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
+    
     <Router>
       <Fragment>
       <Navbar />
@@ -30,6 +31,7 @@ function App() {
       <Footer />
       </Fragment>
     </Router>
+  
   );
 }
 
