@@ -29,14 +29,6 @@ const resolvers = {
                 throw new AuthenticationError('No context.tour.');
             }
         },
-        // get all tours by destination
-        tours: async (parent, args, context) => {
-            // if (context.tours) {
-            const toursData = await Tours.findByFields({ tourDestination: Tours.context.tourDestination })
-            return [toursData];
-            //}
-        }
-    },
     //     // get all tours by entered searchDestination
     //     tours: async (parent, { searchDestination }) => {
     //         const params = tourDestination ? { searchDestination } : {};
@@ -48,7 +40,7 @@ const resolvers = {
             const user = await User.create({ username, email, password });
             const token = signToken(user);
             return { token, user };
-        }
+        },
         addTour: async (parent, { tourId, tourGuide, tourDestination, tourName, image, description }) => {
             const tour = await Tours.create({ tourId, tourGuide, tourDestination, tourName, image, description });
             // const token = signToken(user);
