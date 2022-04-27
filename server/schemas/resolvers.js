@@ -15,6 +15,19 @@ const resolvers = {
             }
 
             throw new AuthenticationError('Not logged in');
+            },
+            // get all tours by destination
+            tours: async (parent, args, context) => {
+                 if (context.tours) {
+                    //const toursData = await Tours.findByFields({ tourDestination: Tours.context.tourDestination }) 
+                    const toursData = await Tours.find({ tourDestination: context.tours.tourDestination })
+                    console.log(toursData);
+                    // Code below can be removed.  It was used for testing purposes.
+                    // const toursData = await Tours.findOne();             
+                    return toursData;
+                }
+                throw new AuthenticationError('No context.tour.');
+            }
         },
         // get all tours by destination
         tours: async (parent, args, context) => {
@@ -35,7 +48,7 @@ const resolvers = {
             const user = await User.create({ username, email, password });
             const token = signToken(user);
             return { token, user };
-        },
+        }
         addTour: async (parent, { tourId, tourGuide, tourDestination, tourName, image, description }) => {
             const tour = await Tours.create({ tourId, tourGuide, tourDestination, tourName, image, description });
             // const token = signToken(user);
