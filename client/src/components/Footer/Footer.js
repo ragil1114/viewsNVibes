@@ -20,7 +20,7 @@ class Footer extends Component {
             <li><Link to="#"  className="btn-floating blue"><i className="material-icons">send</i></Link></li>
           </ul>
         </div>
-        <div className="section purple darken-2 white-text center">
+        <div className="section blue lighten-3 white-text center">
         <div className="row">
             <div className="col s12">
               <h4>Follow Us</h4>

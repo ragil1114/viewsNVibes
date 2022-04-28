@@ -15,13 +15,13 @@ class Popular extends Component {
                 <div className="container">
                     <div className="row">
                         <h4 className="center">
-                            <span className="purple-text darken-1">ViewsN'Vibes</span> Top Destinations</h4>
+                            <span className="blue-text text-lighten-3">ViewsN'Vibes</span> Top Destinations</h4>
                         <div className="col s12 m4">
                             <div className="card">
                                 <div className="card-image">
                                     <img src={Resort1} alt="" />
                                     <span className="card-title">San Francisco</span>
-                                    <Link to="#" className="btn-floating activator halfway-fab waves-effect waves-light purple" href="#"><i className="material-icons">add</i></Link>
+                                    <Link to="#" className="btn-floating activator halfway-fab waves-effect waves-light orange accent-1" href="#"><i className="material-icons">add</i></Link>
                                 </div>
                                 <div className="card-content">
                                 <p>San Francisco is a cultural, commercial, and financial center in the U.S. state of California. Located in Northern California, San Francisco is the 17th most populous city proper in the United States, and the fourth most populous in California, with 873,965 residents as of 2020
@@ -42,7 +42,7 @@ class Popular extends Component {
                                 <div className="card-image">
                                     <img src={Resort2} alt="" />
                                     <span className="card-title">New Orleans</span>
-                                    <Link to="#"  className="btn-floating activator halfway-fab waves-effect waves-light purple"><i className="material-icons">add</i></Link>
+                                    <Link to="#"  className="btn-floating activator halfway-fab waves-effect waves-light orange accent-1"><i className="material-icons">add</i></Link>
                                 </div>
                                 <div className="card-content">
                                     <p>New Orleans is a Louisiana city on the Mississippi River, near the Gulf of Mexico. Nicknamed the "Big Easy," it's known for its round-the-clock nightlife, vibrant live-music scene and spicy, singular cuisine reflecting its history as a melting pot of French, African and American cultures. 
@@ -63,7 +63,7 @@ class Popular extends Component {
                                 <div className="card-image">
                                     <img src={Resort3} alt="" />
                                     <span className="card-title">New York</span>
-                                    <Link to="#"  className="btn-floating activator halfway-fab waves-effect waves-light purple"><i className="material-icons">add</i></Link>
+                                    <Link to="#"  className="btn-floating activator halfway-fab waves-effect waves-light orange accent-1"><i className="material-icons">add</i></Link>
                                 </div>
                                 <div className="card-content">
                                     <p>New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. Its iconic sites include skyscrapers such as the Empire State Building and sprawling Central Park. Broadway theater is staged in neon-lit Times Square.
@@ -83,13 +83,13 @@ class Popular extends Component {
 
                     <div className="row">
                         <h4 className="center">
-                            <span className="purple-text darken-1">ViewsN'Vibes</span> Top Tour Guides </h4>
+                            <span className="blue-text text-lighten-3">ViewsN'Vibes</span> Top Tour Guides </h4>
                         <div className="col s12 m4">
                             <div className="card">
                                 <div className="card-image">
                                     <img src={tourguide1} alt="" />
                                     <span className="card-title">Emily S.</span>
-                                    <Link to="#" className="btn-floating activator halfway-fab waves-effect waves-light purple" href="#"><i className="material-icons">add</i></Link>
+                                    <Link to="#" className="btn-floating activator halfway-fab waves-effect waves-light orange accent-1" href="#"><i className="material-icons">add</i></Link>
                                 </div>
                                 <div className="card-content">
                                     <p>Painted Ladies San Francisco City Tour <b>$75</b>
@@ -110,7 +110,7 @@ class Popular extends Component {
                                 <div className="card-image">
                                     <img src={tourguide2} alt="" />
                                     <span className="card-title">Rico M.</span>
-                                    <Link to="#"  className="btn-floating activator halfway-fab waves-effect waves-light purple"><i className="material-icons">add</i></Link>
+                                    <Link to="#"  className="btn-floating activator halfway-fab waves-effect waves-light orange accent-1"><i className="material-icons">add</i></Link>
                                 </div>
                                 <div className="card-content">
                                     <p>Half Day Driving, Walking, History, Culture, and Architecture <b>$135</b>
@@ -130,7 +130,7 @@ class Popular extends Component {
                                 <div className="card-image">
                                     <img src={tourguide3} alt="" />
                                     <span className="card-title">Sam T.</span>
-                                    <Link to="#"  className="btn-floating activator halfway-fab waves-effect waves-light purple"><i className="material-icons">add</i></Link>
+                                    <Link to="#"  className="btn-floating activator halfway-fab waves-effect waves-light orange accent-1"><i className="material-icons">add</i></Link>
                                 </div>
                                 <div className="card-content">
                                     <p>New York in One Day Guided Sightseeing Tour <b>$250</b>
@@ -139,7 +139,7 @@ class Popular extends Component {
                                 <div className="card-reveal">
                                     <span className="card-title grey-text text-darken-4">Sam T.<i className="material-icons right">close</i></span>
                                     <p>Welcome! <br></br>
-                                    I’m your tour guide Natalja. It’s great to meet you in New York City. Discover New York and you will see it is phenomenal. Like Alice in her Wonderland, you will find there is even more to see in ny than you have dreamed about.
+                                    I’m your tour guide Samantha. It’s great to meet you in New York City. Discover New York and you will see it is phenomenal. Like Alice in her Wonderland, you will find there is even more to see in ny than you have dreamed about.
                                     </p>
                                     <br></br> <b>Book Today!</b>
                                 </div>

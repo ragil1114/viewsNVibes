@@ -9,7 +9,7 @@ class Contact extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col s12 m6">
-                            <div className="card-panel purple white-text center">
+                            <div className="card-panel orange accent-1 white-text center">
                                 <i className="material-icons medium">email</i>
                                 <h5>ViewsN'Vibes Address</h5>
                                 <p>Contact us with any questions or concerns you may have!</p>
@@ -30,21 +30,21 @@ class Contact extends Component {
                                 <form>
                                     <div className="input-field">
                                         <input type="text" id="name" className="validate" />
-                                        <label htmlFor="name" className="purple-text">Name</label>
+                                        <label htmlFor="name" className="orange-text text-accent-1">Name</label>
                                     </div>
                                     <div className="input-field">
                                         <input type="email" id="email" />
-                                        <label htmlFor="email" className="purple-text">Email</label>
+                                        <label htmlFor="email" className="orange-text text-accent-1">Email</label>
                                     </div>
                                     <div className="input-field">
                                         <input type="text" id="phone" />
-                                        <label htmlFor="phone" className="purple-text">Phone</label>
+                                        <label htmlFor="phone" className="orange-text text-accent-1">Phone</label>
                                     </div>
                                     <div className="input-field">
                                         <textarea className="materialize-textarea" id="message" data-length="120"></textarea>
-                                        <label htmlFor="message" className="purple-text">Message</label>
+                                        <label htmlFor="message" className="orange-text text-accent-1">Message</label>
                                     </div>
-                                    <input type="submit" value="Submit" className="btn purple" />
+                                    <input type="submit" value="Submit" className="btn orange accent-1" />
                                 </form>
                             </div>
                         </div>

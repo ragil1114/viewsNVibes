@@ -22,7 +22,7 @@ class Banner extends Component {
             <div className="caption center-align">
               <h2>Pick Your Destination</h2>
               <h5 className="light grey-text text-lighten-3 hide-on-small-only">Simply search a location you would like to visit, and get connected </h5>
-              <AnchorLink href="#search" className="btn btn-large purple">Get Started</AnchorLink>
+              <AnchorLink href="#search" className="btn btn-large blue lighten-3">Get Started</AnchorLink>
             </div>
           </li>
           <li>
@@ -30,7 +30,7 @@ class Banner extends Component {
             <div className="caption left-align">
               <h2>Book a Tour For Your Trip</h2>
               <h5 className="light grey-text text-lighten-3 hide-on-small-only">By creating an account, you can have access to our tour guides </h5>
-              <AnchorLink href="#search" className="btn btn-large purple">Get Started</AnchorLink>
+              <AnchorLink href="#search" className="btn btn-large blue lighten-3">Get Started</AnchorLink>
               
             </div>
           </li>
@@ -39,7 +39,7 @@ class Banner extends Component {
             <div className="caption right-align">
               <h2>Let Us Do The Rest</h2>
               <h5 className="light grey-text text-lighten-3 hide-on-small-only">Just book your flight, and we have your itinerary covered when you select one of our Tour Guides</h5>
-              <AnchorLink href="#search" className="btn btn-large purple">Get Started</AnchorLink>
+              <AnchorLink href="#search" className="btn btn-large blue lighten-3">Get Started</AnchorLink>
              
             </div>
           </li>
@@ -49,7 +49,7 @@ class Banner extends Component {
             <div className="caption center-align">
               <h2>Pick Your Destination</h2>
               <h5 className="light grey-text text-lighten-3 hide-on-small-only">Simply search a location you would like to visit, and get connected. </h5>
-              <AnchorLink href="#search" className="btn btn-large purple">Get Started</AnchorLink>
+              <AnchorLink href="#search" className="btn btn-large blue lighten-3">Get Started</AnchorLink>
               
             </div>
           </li>
@@ -58,7 +58,7 @@ class Banner extends Component {
             <div className="caption left-align">
               <h2>Book a Tour For Your Trip</h2>
               <h5 className="light grey-text text-lighten-3 hide-on-small-only">By creating an account, you can have access to our tour guides </h5>
-              <AnchorLink href="#search" className="btn btn-large purple">Get Started</AnchorLink>
+              <AnchorLink href="#search" className="btn btn-large blue lighten-3">Get Started</AnchorLink>
               
             </div>
           </li>
@@ -67,7 +67,7 @@ class Banner extends Component {
             <div className="caption right-align">
               <h2>Let Us Do The Rest</h2>
               <h5 className="light grey-text text-lighten-3 hide-on-small-only">Just book your flight, and we have your itinerary covered when you select one of our Tour Guides</h5>
-              <AnchorLink href="#search" className="btn btn-large purple">Get Started</AnchorLink>
+              <AnchorLink href="#search" className="btn btn-large blue lighten-3">Get Started</AnchorLink>
               
             </div>
           </li>
