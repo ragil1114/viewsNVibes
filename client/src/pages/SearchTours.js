@@ -37,7 +37,7 @@ const SearchTours = () => {
         }
         
         try {
-            // CALL GET_TOURS query here
+            // THE QUERY BELOW IS NOT WORKING.  ERROR SAYS: "getTours is not a function at handleSeekTours"
             const tourDetails  = await getTours(searchInput);
             if (!tourDetails) {
                 throw new Error('something went wrong!');
