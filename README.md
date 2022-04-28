@@ -54,10 +54,10 @@ To launch the application, run the following command:
 
 ## Links
 
-- GitHub Repo:
+- [GitHub Repo](https://github.com/ragil1114/viewsNVibes.git)
 https://github.com/ragil1114/viewsNVibes.git
 
-- Heroku App:
+- [Heroku App](https://viewsnvibes.herokuapp.com/)
 https://viewsnvibes.herokuapp.com/
 
 ## Images
