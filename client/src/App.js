@@ -20,7 +20,7 @@ import Signup from './components/Signup/Signup'
 import Contact from './components/Contact/Contact';
 // import SearchTours from './pages/SearchTours';
 // import SavedTours from './pages/SavedTours';
-import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 const httpLink = createHttpLink({
@@ -43,10 +43,6 @@ const client = new ApolloClient({
   link: authLink.concat(httpLink),
   cache: new InMemoryCache(),
 });
-
-
-
-
 
 function App() {
   return (

@@ -1,3 +1,12 @@
+export const getSavedTourIds = () => {
+  const savedTourIds = localStorage.getItem('saved_tours')
+    ? JSON.parse(localStorage.getItem('saved_tours'))
+    : [];
+
+  return savedTourIds;
+};
+
+
 export const saveTourIds = (tourIdArr) => {
   if (tourIdArr.length) {
     localStorage.setItem('saved_tours', JSON.stringify(tourIdArr));
