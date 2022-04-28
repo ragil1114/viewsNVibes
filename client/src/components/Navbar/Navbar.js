@@ -1,6 +1,6 @@
 import React, { Component, useState } from 'react';
 import { Nav,  Modal, Tab } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 import '../../../../node_modules/materialize-css/dist/css/materialize.min.css';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
@@ -10,12 +10,6 @@ import Signin from '../Signin/Signin';
 
 import Auth from '../../utils/auth';
 
-
-
-
-
-
-
 const SmoothScroll = () => {
 
   const [showModal, setShowModal] = useState(false);
@@ -24,7 +18,7 @@ const SmoothScroll = () => {
     <section>
       
       <div className="navbar-fixed">
-        <nav className="purple">
+        <nav className="blue lighten-3">
           <div className="container">
             <div className="nav-wrapper">
               <AnchorLink href="#home" className="brand-logo">

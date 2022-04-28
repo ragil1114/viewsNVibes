@@ -62,8 +62,8 @@ function App() {
       <Adventure />
       <Booking />
       <Gallery />
-      <Signin />
-      <Signup />
+      {/* <Signin />
+      <Signup /> */}
       <Contact />
       <Footer />
       {/* </Fragment> */}
