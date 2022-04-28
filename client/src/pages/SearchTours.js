@@ -11,10 +11,10 @@ import { response } from 'express';
 
 const SearchTours = () => {
  // CREATE STATE FOR HOLDING RETURNED GRAPHQL QUERY
-  const [searchedTours, setSearchTour] = useState([]);
+  const [searchedTours, setSearchedTour] = useState([]);
 
   // CREATE STATE FOR HOLDING OUR SEARCH FIELD DATA
-  const [searchInput, setsearchInput] = useState('');
+  const [searchInput, setSearchInput] = useState('');
 
   // CREATE STATE TO HOLD SAVED TOURID VALUES
   const [savedTourIds, setSavedTourIds] = useState(getSavedTourIds());
@@ -24,6 +24,21 @@ const SearchTours = () => {
   });
 
   const [saveTour, { error }] = useMutation(SAVE_TOUR);
+
+  const limit = 6;
+  const query = `
+  {
+    tours {
+        _id
+        tourId
+        tourGuide
+        tourDestination
+        tourName
+        image
+        description
+    }
+  }
+  `
 
   // CREATE METHOD TO SEARCH FOR TOURS AND SET STATE ON FORM SUBMIT
   const handleFormSubmit = async (event) => {
@@ -54,16 +69,17 @@ const SearchTours = () => {
 
       const { items } = await response.json();
 
-      const bookData = items.map((book) => ({
-        bookId: book.id,
-        authors: book.volumeInfo.authors || ['No author to display'],
-        title: book.volumeInfo.title,
-        description: book.volumeInfo.description,
-        image: book.volumeInfo.imageLinks?.thumbnail || '',
-        link: book.volumeInfo.infoLink
+      const tourData = items.map((tours) => ({
+        bookId: tours._id,
+        tourGuide: tours.tourGuide,
+        tourDestination: tours.tourDestination,
+        tourName: tours.tourName,
+        description: tours.description,
+        image: tours.image,
+        
       }));
 
-      setSearchedBooks(bookData);
+      setSearchedTour(tourData);
       setSearchInput('');
     } catch (err) {
       console.error(err);
