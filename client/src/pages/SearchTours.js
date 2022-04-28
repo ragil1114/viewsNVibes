@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import { Jumbotron, Container, Col, Form, Button, Card, CardColumns } from 'react-bootstrap';
+import { Jumbotron, Container, Col, Form, Button, Card, CardColumns } from 'react-bootstrap';
 
 // import Auth from '../utils/auth';
 
@@ -86,5 +86,33 @@ const SearchTours = () => {
     }
   };
 
+  return (
+      <>
+        <Jumbotron fluid className='text-light bg-dark'>
+        <Container>
+          <h1>Search for Tours!</h1>
+          <Form onSubmit={handleFormSubmit}>
+            <Form.Row>
+              <Col xs={12} md={8}>
+                <Form.Control
+                  name='searchInput'
+                  value={searchInput}
+                  onChange={(e) => setSearchInput(e.target.value)}
+                  type='text'
+                  size='lg'
+                  placeholder='Search for a tour'
+                />
+              </Col>
+              <Col xs={12} md={4}>
+                <Button type='submit' variant='success' size='lg'>
+                  Submit Search
+                </Button>
+              </Col>
+            </Form.Row>
+          </Form>
+        </Container>
+      </Jumbotron>
+      </>
+  )
 }
 export default SearchTours;
