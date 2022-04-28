@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Jumbotron, Container, Col, Form, Button, Card, CardColumns } from 'react-bootstrap';
+import { Jumbotron, Container, Col, Form, Button, Card, CardColumns } from 'react-bootstrap'; 
 
 import Auth from '../utils/auth';
 import { saveTourIds, getSavedTourIds } from '../utils/localStorage';
@@ -90,7 +90,7 @@ const SearchTours = () => {
 
     return (
         <>
-            <Jumbotron fluid className='text-light bg-dark'>
+           {/* <Jumbotron fluid className='text-light bg-dark'> */}
                 <Container>
                     <h1>Search for Tours!</h1>
                     <Form onSubmit={handleSeekTours}>
@@ -113,7 +113,7 @@ const SearchTours = () => {
                         </Form.Row>
                     </Form>
                 </Container>
-            </Jumbotron>
+            {/* </Jumbotron> */}
 
             <Container>
                 <h2>
