@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 import '../../../../node_modules/materialize-css/dist/css/materialize.min.css';
 import './Search.css';
 import { GET_TOURS } from '../../utils/queries'
+import Auth from '../../utils/auth'
 
 class Search extends Component {
+  
   render() {
+    const loggedIn = Auth.loggedIn();
     return (
       <section id="search" className="section section-search blue accent-2 white-text center scrollspy">
         <div className="container">
