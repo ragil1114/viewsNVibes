@@ -22,6 +22,14 @@ class Search extends Component {
             </div>
           </div>
         </div>
+
+        {loggedIn && tourData ? (
+          <div className="col-12 col-lg-3 mb-3">
+            <TourList
+            tourData={tourDestination: context.tours.tourDestination}
+            />
+          </div>
+        ) : null}
       </section>
     );
   }
