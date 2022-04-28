@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../../../../node_modules/materialize-css/dist/css/materialize.min.css';
 import './Search.css';
+import { GET_TOURS } from '../../utils/queries'
 
 class Search extends Component {
   render() {
