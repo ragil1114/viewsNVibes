@@ -139,7 +139,7 @@ const SearchTours = () => {
                                             onClick={() => handleSaveTour(tour.TourId)}>
                                             {savedTourIds?.some((savedTourId) => savedTourId === tour.tourId)
                                                 ? 'This tour has already been saved!'
-                                                : 'Save this Tour!'}
+                                                : 'Book this Tour!'}
                                         </Button>
                                     )}
                                 </Card.Body>
