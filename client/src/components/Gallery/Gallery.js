@@ -102,7 +102,7 @@ class Gallery extends Component {
       <section id="gallery" className="section section-gallery scrollspy">
         <div className="container">
           <h4 className="center">
-            <span className="purple-text darken-1">Photo </span> Gallery
+            <span className="purple-text darken-1">Inspo </span> Gallery
           </h4>
           <PhotoGallery />
           {/* <div className="row">
