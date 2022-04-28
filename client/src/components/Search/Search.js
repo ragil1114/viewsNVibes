@@ -5,7 +5,7 @@ import './Search.css';
 class Search extends Component {
   render() {
     return (
-      <section id="search" className="section section-search blue accent-2 white-text center scrollspy">
+      <section id="search" className="section section-search orange accent-1 white-text center scrollspy">
         <div className="container">
           <div className="row">
             <div className="col s12">
