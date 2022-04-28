@@ -24,8 +24,7 @@ class Popular extends Component {
                                     <Link to="#" className="btn-floating activator halfway-fab waves-effect waves-light purple" href="#"><i className="material-icons">add</i></Link>
                                 </div>
                                 <div className="card-content">
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas aliquid fugiat corporis laudantium, architecto
-                                        delectus?
+                                <p>San Francisco is a cultural, commercial, and financial center in the U.S. state of California. Located in Northern California, San Francisco is the 17th most populous city proper in the United States, and the fourth most populous in California, with 873,965 residents as of 2020
                                     </p>
                                 </div>
                                 <div className="card-reveal">
@@ -46,8 +45,7 @@ class Popular extends Component {
                                     <Link to="#"  className="btn-floating activator halfway-fab waves-effect waves-light purple"><i className="material-icons">add</i></Link>
                                 </div>
                                 <div className="card-content">
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas aliquid fugiat corporis laudantium, architecto
-                                        delectus?
+                                    <p>New Orleans is a Louisiana city on the Mississippi River, near the Gulf of Mexico. Nicknamed the "Big Easy," it's known for its round-the-clock nightlife, vibrant live-music scene and spicy, singular cuisine reflecting its history as a melting pot of French, African and American cultures. 
                                     </p>
                                 </div>
                                 <div className="card-reveal">
@@ -68,8 +66,7 @@ class Popular extends Component {
                                     <Link to="#"  className="btn-floating activator halfway-fab waves-effect waves-light purple"><i className="material-icons">add</i></Link>
                                 </div>
                                 <div className="card-content">
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas aliquid fugiat corporis laudantium, architecto
-                                        delectus?
+                                    <p>New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. Its iconic sites include skyscrapers such as the Empire State Building and sprawling Central Park. Broadway theater is staged in neon-lit Times Square.
                                     </p>
                                 </div>
                                 <div className="card-reveal">
@@ -95,13 +92,16 @@ class Popular extends Component {
                                     <Link to="#" className="btn-floating activator halfway-fab waves-effect waves-light purple" href="#"><i className="material-icons">add</i></Link>
                                 </div>
                                 <div className="card-content">
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas aliquid fugiat corporis laudantium, architecto
-                                        delectus?
+                                    <p>Painted Ladies San Francisco City Tour <b>$75</b>
                                     </p>
                                 </div>
                                 <div className="card-reveal">
-                                    <span className="card-title grey-text text-darken-4">Cuba<i className="material-icons right">close</i></span>
-                                    <p>Here is some more information about this trip</p>
+                                    <span className="card-title grey-text text-darken-4">Emily S.<i className="material-icons right">close</i></span>
+                                    <p> Welcome! <br></br>
+
+                                    Let me introduce myself. My name is Emily. I am a guide and will support you during the tour. I promise you are going to enjoy your stay here in San Fran. This is a beautiful, quiet city where you can relax, sit by the beach, enjoy great meals and feel very safe. You can walk into town and enjoy the fountains or take a moonlit walk along the water. <br></br>
+                                    <br></br> <b>Book Today!</b>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -113,13 +113,15 @@ class Popular extends Component {
                                     <Link to="#"  className="btn-floating activator halfway-fab waves-effect waves-light purple"><i className="material-icons">add</i></Link>
                                 </div>
                                 <div className="card-content">
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas aliquid fugiat corporis laudantium, architecto
-                                        delectus?
+                                    <p>Half Day Driving, Walking, History, Culture, and Architecture <b>$135</b>
                                     </p>
                                 </div>
                                 <div className="card-reveal">
-                                    <span className="card-title grey-text text-darken-4">Halong Bay<i className="material-icons right">close</i></span>
-                                    <p>Here is some more information about this trip</p>
+                                    <span className="card-title grey-text text-darken-4">Rico M.<i className="material-icons right">close</i></span>
+                                    <p>Welcome! <br></br>
+                                    I'm Rico, your guide for this tour. I'll tell you all about the things you will see. If you have any questions, please ask. It's my job to answer them. All my time is free to talk to you, sightseers.
+                                    </p>
+                                    <br></br> <b>Book Today!</b>
                                 </div>
                             </div>
                         </div>
@@ -131,13 +133,15 @@ class Popular extends Component {
                                     <Link to="#"  className="btn-floating activator halfway-fab waves-effect waves-light purple"><i className="material-icons">add</i></Link>
                                 </div>
                                 <div className="card-content">
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas aliquid fugiat corporis laudantium, architecto
-                                        delectus?
+                                    <p>New York in One Day Guided Sightseeing Tour <b>$250</b>
                                     </p>
                                 </div>
                                 <div className="card-reveal">
-                                    <span className="card-title grey-text text-darken-4">Costa Rica<i className="material-icons right">close</i></span>
-                                    <p>Here is some more information about this trip</p>
+                                    <span className="card-title grey-text text-darken-4">Sam T.<i className="material-icons right">close</i></span>
+                                    <p>Welcome! <br></br>
+                                    I’m your tour guide Natalja. It’s great to meet you in New York City. Discover New York and you will see it is phenomenal. Like Alice in her Wonderland, you will find there is even more to see in ny than you have dreamed about.
+                                    </p>
+                                    <br></br> <b>Book Today!</b>
                                 </div>
                             </div>
                         </div>

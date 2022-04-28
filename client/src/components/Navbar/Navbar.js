@@ -27,7 +27,7 @@ const SmoothScroll = () => {
         <nav className="purple">
           <div className="container">
             <div className="nav-wrapper">
-              <AnchorLink href="!#" className="brand-logo">
+              <AnchorLink href="#home" className="brand-logo">
                 ViewsN'Vibes
               </AnchorLink>
               <AnchorLink
@@ -57,17 +57,14 @@ const SmoothScroll = () => {
           </div>
         </nav>
       </div>
+      
+      
+      
+      
+      
+      
       <ul className="sidenav" id="mobile-demo">
-        {/* <li>
-            <div className="user-view">
-              <div className="background">
-                  <img src={Imgbackground} alt="ocean" />
-              </div>
-              <AnchorLink href="#user"><img className="circle" src={Imgperson} alt="person" /></AnchorLink>
-              <AnchorLink href="#name"><span className="white-text name">John Doe</span></AnchorLink>
-              <AnchorLink href="#email"><span className="white-text email">jdandturk@gmail.com</span></AnchorLink>
-            </div>
-          </li> */}
+     
         <li>
           <AnchorLink href="#home">Home</AnchorLink>
         </li>
@@ -93,6 +90,8 @@ const SmoothScroll = () => {
           <AnchorLink href="#contact">Contact</AnchorLink>
         </li>
       </ul>
+
+
 
           {/* set modal data up */}
       <Modal
