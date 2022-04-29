@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Jumbotron, Container, Col, Form, Button, Card, CardColumns } from 'react-bootstrap'; 
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import Auth from '../utils/auth';
 import { saveTourIds, getSavedTourIds } from '../utils/localStorage';
+import '../../../../node_modules/materialize-css/dist/css/materialize.min.css';
+
 
 import { GET_TOURS } from '../utils/queries';
 
@@ -105,10 +108,9 @@ const SearchTours = () => {
                                     placeholder='Search for a tour'
                                 />
                             </Col>
-                            <Col xs={12} md={4}>
-                                <Button type='submit' variant='success' size='lg'>
-                                    Submit Search
-                                </Button>
+                            <Col xs={12} md={4}> <br></br>
+                            <AnchorLink href="#search" className="btn btn-large blue lighten-3">Search</AnchorLink>
+                               
                             </Col>
                         </Form.Row>
                     </Form>
