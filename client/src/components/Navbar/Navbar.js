@@ -14,7 +14,11 @@ import Auth from '../../utils/auth';
 const AppNavbar = () => {
   // set modal display state
   const [showModal, setShowModal] = useState(false);
-
+  const handleModal =(event) => {
+    event.preventDefault()
+    console.log("Working");
+    setShowModal(true);
+  } 
   return (
     <>
     
@@ -109,7 +113,7 @@ const AppNavbar = () => {
                   <Nav.Link onClick={Auth.logout}>Sign Out</Nav.Link>
                 </>
               ) : (
-                <Nav.Link onClick={() => setShowModal(true)}>Sign In</Nav.Link>
+                <Nav.Link onClick={handleModal}>Sign In</Nav.Link>
               )}
             </Nav>
           </Navbar.Collapse>
@@ -119,7 +123,7 @@ const AppNavbar = () => {
              {/* set modal data up */}
     <Modal
         size='lg'
-        show={showModal}
+        show={true}
         onHide={() => setShowModal(false)}
         aria-labelledby='signup-modal'>
         {/* tab container to do either signup or login component */}

@@ -29,7 +29,7 @@ const SearchTours = () => {
     });
 
     const [saveTour, { error }] = useMutation(SAVE_TOUR);
-    const  getTours  = useQuery(GET_TOURS);
+    const  {getTours}  = useQuery(GET_TOURS);
 
     // create method to search for tours and set state on form submit
     const handleSeekTours = async (event) => {
@@ -141,7 +141,7 @@ const SearchTours = () => {
                                             onClick={() => handleSaveTour(tour.TourId)}>
                                             {savedTourIds?.some((savedTourId) => savedTourId === tour.tourId)
                                                 ? 'This tour has already been saved!'
-                                                : 'Save this Tour!'}
+                                                : 'Book this Tour!'}
                                         </Button>
                                     )}
                                 </Card.Body>
