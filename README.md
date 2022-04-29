@@ -47,6 +47,7 @@ To launch the application, run the following command:
 - NPM
 - Mongoose
 - JWT
+- Materialize
 - HTML
 - CSS
 - JavaScript
