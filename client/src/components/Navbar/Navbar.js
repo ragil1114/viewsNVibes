@@ -101,7 +101,7 @@ const AppNavbar = () => {
           <Navbar.Collapse id='navbar'>
             <Nav className='ml-auto'>
               <Nav.Link as={Link} to='/'>
-                Search For Tours
+                {/* Search For Tours */}
               </Nav.Link>
               
               {/* if user is logged in show saved books and logout */}
@@ -113,7 +113,7 @@ const AppNavbar = () => {
                   <Nav.Link onClick={Auth.logout}>Sign Out</Nav.Link>
                 </>
               ) : (
-                <Nav.Link onClick={handleModal}>Sign In</Nav.Link>
+                <Nav.Link onClick={handleModal}></Nav.Link>
               )}
             </Nav>
           </Navbar.Collapse>
